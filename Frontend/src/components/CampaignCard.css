@@ -1,0 +1,22 @@
+/* campaignCard.css */
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: var(--royal-blue);
+    font-weight: bold;
+}
+
+.card-desc {
+    color: var(--charcoal-gray);
+}

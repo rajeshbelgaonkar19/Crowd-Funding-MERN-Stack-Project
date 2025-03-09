@@ -1,0 +1,129 @@
+/* Root Variables for Consistency */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --success-color: #28a745;
+    --success-hover: #218838;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --dark-gray: #343a40;
+    --border-radius: 12px;
+}
+
+/* General container styling */
+.campaigns-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid layout for campaign cards */
+.campaign-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Individual campaign card */
+.campaign-item {
+    background: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+.campaign-item:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Campaign Title & Description */
+.campaign-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.campaign-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.goal-amount {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Campaign Form Styling */
+.campaign-form-container {
+    background: var(--light-gray);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-form input,
+.campaign-form textarea,
+.campaign-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Buttons */
+.btn-create, 
+.btn-submit, 
+.btn-donate {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Donate Button */
+.btn-donate {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-donate:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Create Campaign Button */
+.btn-create {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-create:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: var(--success-color);
+    color: var(--white);
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: var(--success-hover);
+}

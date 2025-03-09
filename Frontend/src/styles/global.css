@@ -1,0 +1,16 @@
+/* global.css */
+:root {
+    --navy-blue: #0A192F;
+    --royal-blue: #1B75BC;
+    --sky-blue: #3FA7D6;
+    --soft-silver: #E5E7EB;
+    --charcoal-gray: #374151;
+    --white: #FFFFFF;
+}
+
+/* Apply Global Styling */
+body {
+    background-color: var(--soft-silver);
+    color: var(--charcoal-gray);
+    font-family: 'Poppins', sans-serif;
+}
